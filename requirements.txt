@@ -1,0 +1,22 @@
+# requirements.txt
+
+# Core data manipulation and Excel handling
+pandas>=1.5.0
+openpyxl>=3.0.0
+
+# Regular expressions (built-in, but listed for clarity)
+# re - No installation needed (built-in Python module)
+
+# File system operations (built-in, but listed for clarity)
+# os - No installation needed (built-in Python module)
+# shutil - No installation needed (built-in Python module)
+
+# Date and time handling (built-in, but listed for clarity)
+# datetime - No installation needed (built-in Python module)
+
+# Optional: For better Excel file handling
+# xlrd>=2.0.0  # Only needed for .xls files
+# xlsxwriter>=3.0.0  # Alternative Excel writer (optional)
+
+# Optional: For progress bars (nice to have)
+# tqdm>=4.60.0  # Optional, for progress bars in future versions

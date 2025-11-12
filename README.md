@@ -29,6 +29,18 @@ A powerful Python tool for validating and cleaning data in Excel files. This too
   - Accumulate results when analyzing multiple columns
   - Generate comprehensive reports for entire session
 
+## Project Structure
+
+```
+.
+├── config.py               # Configuration settings for the validator
+├── excel_validator.py      # Main script for running Excel validations
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
+├── excel_files/            # Directory where input Excel files should be placed
+└── reports/                # Directory where validation reports will be generated
+```
+
 ## Installation
 
 ### Prerequisites
@@ -40,10 +52,10 @@ A powerful Python tool for validating and cleaning data in Excel files. This too
 
 ```bash
 # Clone or download the project
-git clone <repository-url>  # or download and extract
+git clone https://github.com/castor-mark/Spacer.git  # or download and extract
 
 # Navigate to project directory
-cd excel-validator
+cd Spacer
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -60,3 +72,9 @@ pip install -r requirements.txt
 # Run the script
 python excel_validator.py
 ```
+
+## Usage
+
+1.  **Place Input Files**: Put all Excel files you wish to validate into the `excel_files/` directory.
+2.  **Run the Validator**: Execute the `excel_validator.py` script. The script will guide you through the validation options.
+3.  **View Reports**: After validation, detailed reports (Excel and CSV) will be generated in the `reports/` directory. Each run creates a timestamped subfolder, and a `latest/` symlink/shortcut will point to the most recent results.
